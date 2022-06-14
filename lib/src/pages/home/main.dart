@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fnime_streaming/src/constant/dimension.dart';
 import 'package:fnime_streaming/src/constant/string.dart';
 import 'package:fnime_streaming/src/controllers/anime/anime_controller.dart';
+import 'package:fnime_streaming/src/pages/anime/all/anime_all.dart';
 import 'package:fnime_streaming/src/pages/anime/detail/anime_detail.dart';
 import 'package:fnime_streaming/src/pages/home/widget/card_list.dart';
 import 'package:get/get.dart';
@@ -44,14 +45,17 @@ class HomePage extends StatelessWidget {
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const [
+                          children: [
                             Text(
                               'On-going Anime',
                               style: cardSectionTitle,
                             ),
-                            Text(
-                              'See all',
-                              style: seeAllTextStyle,
+                            GestureDetector(
+                              onTap: (() => Get.to(() => AnimeAll())),
+                              child: Text(
+                                'See all',
+                                style: seeAllTextStyle,
+                              ),
                             ),
                           ],
                         ),

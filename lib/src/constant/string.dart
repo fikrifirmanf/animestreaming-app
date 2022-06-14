@@ -5,6 +5,8 @@ const TextStyle cardSectionTitle =
 
 const TextStyle cardTitle =
     TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.w600);
+const TextStyle cardSeeAllTitle =
+    TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.w600);
 
 const TextStyle pageTitle =
     TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.w600);
